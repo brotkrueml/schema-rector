@@ -13,7 +13,7 @@ code with [Rector for TYPO3](https://github.com/sabbelasichon/typo3-rector/).
 The package can be installed with composer:
 
 ```bash
-composer req --dev brotkrueml/schema-rector:dev-master@dev
+composer req --dev brotkrueml/schema-rector
 ```
 
 **Caution:** Never run this tool on production, only on development environment where code is
