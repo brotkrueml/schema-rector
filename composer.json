@@ -1,0 +1,38 @@
+{
+	"name": "brotkrueml/schema-rector",
+	"description": "Instant upgrade and refactoring for the TYPO3 schema extension code by using Rector",
+	"license": "GPL-2.0-or-later",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Chris Müller",
+			"email": "typo3@krue.ml"
+		}
+	],
+	"require": {
+		"php": ">=7.3",
+		"brotkrueml/schema": "^1.7",
+		"rector/rector": "^0.10.3"
+	},
+	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^2.18",
+		"phpunit/phpunit": "^9.5",
+		"rector/rector-generator": "^0.1.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"Brotkrueml\\SchemaRector\\Rules\\": "rules"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Brotkrueml\\SchemaRector\\Tests\\Rules\\": "rules-tests"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"scripts": {
+		"fix-cs": "vendor/bin/php-cs-fixer fix"
+	}
+}
